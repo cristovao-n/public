@@ -152,12 +152,12 @@ weighted avg       0.63      0.60      0.58      1073
 
 ![question-types](assets/question-types.png)
 
-MODALITYPLANEORGAN (Organ System)
-ABN (Abnormality)
-PRES (Object/Condition Presence)
-POS (Positional Reasoning)
-COLOR
-SIZE
-ATTRIB (Attribute Other)
-COUNT (Counting)
-Other
+MODALITYPLANEORGAN (Organ System)  
+ABN (Abnormality)  
+PRES (Object/Condition Presence)  
+POS (Positional Reasoning)  
+COLOR  
+SIZE  
+ATTRIB (Attribute Other)  
+COUNT (Counting)  
+Other  
