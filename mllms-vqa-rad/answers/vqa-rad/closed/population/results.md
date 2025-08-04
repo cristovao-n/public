@@ -152,7 +152,9 @@ weighted avg       0.63      0.60      0.58      1073
 
 ![question-types](assets/question-types.png)
 
-MODALITYPLANEORGAN (Organ System)  
+MODALITY  
+PLANE  
+ORGAN (Organ System)  
 ABN (Abnormality)  
 PRES (Object/Condition Presence)  
 POS (Positional Reasoning)  
