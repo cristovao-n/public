@@ -148,16 +148,58 @@ weighted avg       0.63      0.60      0.58      1073
 10          PRSE  0.000000      1
 ```
 
+# Comparison between models
+
+Dataset of F1-score by question type  
+```csv
+model,question_type,f1_score,count
+gpt-4o,ORGAN,0.967742,17
+gpt-4o,MODALITY,0.960000,72
+gpt-4o,PLANE,0.925373,53
+gpt-4o,POS,0.833333,21
+gpt-4o,ATTRIB,0.819672,47
+gpt-4o,OTHER,0.754098,51
+gpt-4o,PRES,0.706815,624
+gpt-4o,COUNT,0.666667,10
+gpt-4o,SIZE,0.662500,157
+gpt-4o,COLOR,0.600000,32
+gpt-4o,ABN,0.541667,116
+qwen2.5vl,MODALITY,0.924731,72
+qwen2.5vl,PLANE,0.906250,53
+qwen2.5vl,ORGAN,0.857143,17
+qwen2.5vl,COUNT,0.833333,10
+qwen2.5vl,ATTRIB,0.636364,47
+qwen2.5vl,POS,0.625000,21
+qwen2.5vl,PRES,0.575406,631
+qwen2.5vl,SIZE,0.495575,157
+qwen2.5vl,COLOR,0.461538,32
+qwen2.5vl,OTHER,0.439024,52
+qwen2.5vl,ABN,0.411765,121
+llama3.2vision,MODALITY,0.696970,65
+llama3.2vision,ORGAN,0.666667,15
+llama3.2vision,COUNT,0.545455,8
+llama3.2vision,OTHER,0.536585,44
+llama3.2vision,PLANE,0.523810,48
+llama3.2vision,PRES,0.445013,571
+llama3.2vision,ABN,0.437500,108
+llama3.2vision,SIZE,0.420000,141
+llama3.2vision,POS,0.375000,19
+llama3.2vision,COLOR,0.320000,27
+llama3.2vision,ATTRIB,0.294118,43
+```
+
 # Terms
 
 ![question-types](assets/question-types.png)
 
-MODALITYPLANEORGAN (Organ System)
-ABN (Abnormality)
-PRES (Object/Condition Presence)
-POS (Positional Reasoning)
-COLOR
-SIZE
-ATTRIB (Attribute Other)
-COUNT (Counting)
-Other
+MODALITY  
+PLANE  
+ORGAN (Organ System)  
+ABN (Abnormality)  
+PRES (Object/Condition Presence)  
+POS (Positional Reasoning)  
+COLOR  
+SIZE  
+ATTRIB (Attribute Other)  
+COUNT (Counting)  
+Other  
