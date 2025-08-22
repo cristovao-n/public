@@ -7,8 +7,9 @@
 ## GPT-4o
 
 ```
-closed-ended questions in sample: 1299
-rows discarded: 119 (expected answer or model answer is not yes/no)
+closed-ended questions in sample: 1299  
+closed-ended questions in sample where expected answer is yes/no: 1193  
+rows discarded: 13 (model answer is not yes/no)  
 valid rows: 1180
 yes: 585
 no: 595
@@ -52,14 +53,66 @@ weighted avg       0.71      0.71      0.71      1180
 10          PRSE  0.000000      1
 ```
 
+## Gemini 2.5 Pro  
+
+```
+closed-ended questions in sample: 1299  
+closed-ended questions in sample where expected answer is yes/no: 1193  
+rows discarded: 101 (model answer is not yes/no)  
+valid rows: 1092
+yes: 537
+no: 555
+```
+
+### Confusion Matrix
+
+<img width="483" height="427" alt="image" src="https://github.com/user-attachments/assets/1170caa7-c8bc-4a95-b153-68f858780aa1" />
+
+
+### Classification Report
+
+```
+Strict Accuracy: 75.64%
+Classification Report:
+
+              precision    recall  f1-score   support
+
+          no       0.80      0.70      0.75       555
+         yes       0.72      0.81      0.77       537
+
+    accuracy                           0.76      1092
+   macro avg       0.76      0.76      0.76      1092
+weighted avg       0.76      0.76      0.76      1092
+```
+
+### F1 Score by Question Type
+
+```
+   question_type  f1_score  count
+5          ORGAN  0.967742     17
+4       MODALITY  0.960000     72
+7          PLANE  0.925373     53
+8            POS  0.833333     21
+1         ATTRIB  0.819672     47
+6          OTHER  0.754098     51
+9           PRES  0.706815    624
+3          COUNT  0.666667     10
+11          SIZE  0.662500    157
+2          COLOR  0.600000     32
+0            ABN  0.541667    116
+10          PRSE  0.000000      1
+```
+
+
 ## Qwen 2.5 VL 7b
 
 ```
-closed-ended questions in sample: 1299
-rows discarded: 106 (expected answer or model answer is not yes/no)
-valid rows: 1193
-yes: 587
-no: 606
+closed-ended questions in sample: 1299  
+closed-ended questions in sample where expected answer is yes/no: 1193  
+rows discarded: 0 (model answer is not yes/no)  
+valid rows: 1193  
+yes: 587  
+no: 606  
 ```
 
 ### Confusion Matrix
@@ -103,8 +156,9 @@ weighted avg       0.76      0.71      0.69      1193
 ## Llama 3.2 Vision 11b
 
 ```
-closed-ended questions in sample: 1299
-rows discarded: 226 (expected answer or model answer is not yes/no)
+closed-ended questions in sample: 1299  
+closed-ended questions in sample where expected answer is yes/no: 1193  
+rows discarded: 120 (model answer is not yes/no)  
 valid rows: 1073
 yes: 528
 no: 545
@@ -186,6 +240,17 @@ llama3.2vision,SIZE,0.420000,141
 llama3.2vision,POS,0.375000,19
 llama3.2vision,COLOR,0.320000,27
 llama3.2vision,ATTRIB,0.294118,43
+gemini-2.5-pro,MODALITY,0.930233,65
+gemini-2.5-pro,ORGAN,0.928571,16
+gemini-2.5-pro,PLANE,0.888889,50
+gemini-2.5-pro,ATTRIB,0.821429,46
+gemini-2.5-pro,OTHER,0.766667,47
+gemini-2.5-pro,PRES,0.760000,571
+gemini-2.5-pro,COUNT,0.714286,10
+gemini-2.5-pro,SIZE,0.705882,145
+gemini-2.5-pro,COLOR,0.702703,28
+gemini-2.5-pro,ABN,0.693069,114
+gemini-2.5-pro,POS,0.666667,20
 ```
 
 # Terms
